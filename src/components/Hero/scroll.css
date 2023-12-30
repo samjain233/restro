@@ -1,0 +1,48 @@
+.blur-load {
+    background-image: url(../../../public/images/hero/heropreload.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.scrolldown {
+    position: absolute;
+    top: 88%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.scrolldown_span {
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-bottom: 5px solid white;
+    border-right: 5px solid white;
+    transform: rotate(45deg);
+    margin: -10px;
+    animation: animate 2s infinite;
+    opacity: 0;
+}
+
+.scrolldown_span2 {
+    animation-delay: -0.2s;
+}
+
+.scrolldown_span3 {
+    animation-delay: -0.4s;
+}
+
+@keyframes animate {
+    0% {
+        opacity: 0;
+        transform: rotate(45deg) translate(-20px, -20px);
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        transform: rotate(45deg) translate(20px, 20px);
+    }
+}

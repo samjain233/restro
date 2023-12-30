@@ -1,0 +1,21 @@
+.about .swiper {
+    width: 70%;
+    height: 600px;
+}
+
+.about .swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 18px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #fff;
+}
+
+@media only screen and (max-width: 640px) {
+    .about .swiper {
+        width: 100%;
+        height: 400px;
+    }
+}
